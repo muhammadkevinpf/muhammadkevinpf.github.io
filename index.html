@@ -3,31 +3,187 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
-    <title>Portfolio Kevin</title>
+    <title>Kevin's Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 </head>
 
 <body>
-    <div class="jumbotron">
-        <h1 class="display-3">Jumbo heading</h1>
-        <p class="lead">Jumbo helper text</p>
-        <hr class="my-2">
-        <p>More info</p>
-        <p class="lead">
-            <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
-        </p>
-    </div>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#div-nav"
+            aria-controls="div-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="div-nav">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
+    <section id="welcome">
+        <header id="welcome-header">Hello, There.</header>
+        <span id="subheader">I'm Kevin, a Web Developer</span>
+        <a href='#about' id="scrolldown"><span><i class="fas fa-chevron-right"></i></span></a>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="row about-section-row">
+                <div class="col-lg-4 col-md-6 about-explanation mb-5">
+                    <h3 class="text-center headline font-weight-bold">About Me</h3>
+                    <p id="about-paragraph">Hi, I'm Kevin. I'm a Web Developer based on Bandung and I really like Front-end development
+                        because I can see
+                        first
+                        hand what I'm working on. I have knowledge in HTML, CSS, Javascript, JQuery, Bootstrap and so
+                        on.
+                    </p>
+                    <div class="text-center">
+                        <button type="button" class="btn-cv">Download CV &nbsp;&nbsp;&nbsp;<i
+                                class="fas fa-download"></i></button>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-sm-none d-md-none d-lg-block div-profile">
+                    <div class="text-center">
+                        <img src="img/profile.png" class="img-profile" />
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <h3 class="text-center about-headline font-weight-bold">Skills</h3>
+                    <div class="row text-center">
+                        <div class="col-4 col-lg-3">
+                            <img src="img/html5.svg" class="icon-skills" data-toggle="tooltip" data-placement="top" title="Intermediate"/>
+                            <br>
+                            <small>HTML5</small>
+                        </div>
+                        <div class="col-4 col-lg-3">
+                            <img src="img/css-3.svg" class="icon-skills" data-toggle="tooltip" data-placement="top" title="Intermediate"/>
+                            <br>
+                            <small>CSS3</small>
+                        </div>
+                        <div class="col-4 col-lg-3">
+                            <img src="img/javascript.svg" class="icon-skills" data-toggle="tooltip" data-placement="top" title="Basic"/>
+                            <br>
+                            <small>Javascript</small>
+                        </div>
+                        <div class="col-4 col-lg-3">
+                            <img src="img/jquery.png" class="icon-skills" data-toggle="tooltip" data-placement="top" title="Basic"/>
+                            <br>
+                            <small>JQuery</small>
+                        </div>
+                        <div class="col-4 col-lg-3">
+                            <img src="img/bootstrap.png" class="icon-skills" data-toggle="tooltip" data-placement="top" title="Intermediate"/>
+                            <br>
+                            <small>Bootstrap</small>
+                        </div>
+                        <div class="col-4 col-lg-3">
+                            <img src="img/materialize.png" class="icon-skills" data-toggle="tooltip" data-placement="top" title="Basic"/>
+                            <br>
+                            <small>Materialize</small>
+                        </div>
+                        <div class="col-4 col-lg-3">
+                            <img src="img/pwa.png" class="icon-skills" data-toggle="tooltip" data-placement="top" title="Basic"/>
+                            <br>
+                            <small>PWA</small>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h3 class="text-center font-weight-bold headline">Portfolio</h3>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <img src="img/ird1.png" class="img-portfolio img-thumbnail"/>
+                    <div class="img-data">
+                        <h4 class="text-center">IRD Website</h4>
+                        <a href='#' class="icon-link"><img src="img/link.svg"></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <img src="img/flociti.png" class="img-portfolio img-thumbnail"/>
+                    <div class="img-data">
+                        <h4 class="text-center">Travel Shuttle Website</h4>
+                        <a href='#' class="icon-link"><img src="img/link.svg"></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <img src="img/klinik.png" class="img-portfolio img-thumbnail"/>
+                    <div class="img-data">
+                        <h4 class="text-center">Clinic Website</h4>
+                        <a href='#' class="icon-link"><img src="img/link.svg"></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <img src="img/bjb1.png" class="img-portfolio img-thumbnail"/>
+                    <div class="img-data">
+                        <h4 class="text-center">Financial Projections Website</h4>
+                        <a href='#' class="icon-link"><img src="img/link.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="text-center font-weight-bold">Let's Work Together</h1>
+        <p class="text-center">Interested working with me ?</p>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-3">
+                    <a href='#' class="social-icons"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="col-3">
+                    <a href='https://www.linkedin.com/in/muhammad-kevin-52497617a/' class="social-icons"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="col-3">
+                    <a href='mailto:muhammadkevinpf@gmail.com' class="social-icons"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="col-3">
+                    <a href='https://wa.me/6282262341721' class="social-icons"><i class="fab fa-whatsapp-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                dots: false
+            });
+
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+    </script>
+
 </body>
 
 </html>
