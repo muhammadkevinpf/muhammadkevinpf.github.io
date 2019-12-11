@@ -189,6 +189,25 @@ p{
         top:47%;
     }
 }
+
+@media only screen and (max-width: 420px){
+    #welcome-header{
+        font-size: 2.5rem;
+        top: 40%;
+        left: 15%;
+    }
+
+    #subheader{
+        font-size: 1.2rem;
+        left:15%;
+        top:50%;
+    }
+
+    .img-portfolio{
+        height: 200px;
+    }
+}
+   
 /* @media only screen and (max-width: 1024px){
     #welcome-header{
         top: 40%;
