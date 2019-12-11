@@ -152,7 +152,7 @@ p{
     padding:4%;
 }
 
-@media only screen and (max-width: 768px){
+@media (min-width: 768px) and (max-width: 1024px){
     #welcome-header{
         top: 40%;
         left: 25%;
@@ -190,7 +190,7 @@ p{
     }
 }
 
-@media only screen and (max-width: 420px){
+@media (min-width: 320px) and (max-width: 480px){
     #welcome-header{
         font-size: 2.5rem;
         top: 40%;
