@@ -162,6 +162,7 @@ p{
         left:29%;
         top:50%;
     }
+    
 }
 
 
@@ -188,6 +189,14 @@ p{
         left:18%;
         top:47%;
     }
+
+    .social-icons{
+        font-size: 2.5rem;
+    }
+
+    #about-paragraph{
+        text-align: left;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 480px){
@@ -206,16 +215,12 @@ p{
     .img-portfolio{
         height: 200px;
     }
-}
-   
-/* @media only screen and (max-width: 1024px){
-    #welcome-header{
-        top: 40%;
-        left: 30%;
-    }
 
-    #subheader{
-        left:33%;
-        top:48%;
+    #about-paragraph{
+        text-align: left;
     }
-} */
+    
+    .social-icons{
+        font-size: 2.5rem;
+    }
+}
