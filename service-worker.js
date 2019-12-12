@@ -8,7 +8,7 @@ workbox.core.setCacheNameDetails({
 
 workbox.routing.registerRoute(
     new RegExp('\.css$'),
-    workbox.strategies.cacheFirst({
+    workbox.strategies.staleWhileRevalidate({
         cacheName: 'cache-css',
         plugins:[
             new workbox.expiration.Plugin({
@@ -22,7 +22,7 @@ workbox.routing.registerRoute(
 
 workbox.routing.registerRoute(
     new RegExp('\.(png|svg|jpg|jpeg)$'),
-    workbox.strategies.cacheFirst({
+    workbox.strategies.staleWhileRevalidate({
         cacheName: 'cache-images',
         plugins: [
             new workbox.expiration.Plugin({
