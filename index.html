@@ -5,17 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Kevin's Portfolio">
     <title>Kevin's Portfolio</title>
+    <link rel="icon" href="img/icon/icon.png" type="image/png">
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/fontawesome.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Kevin's Portfolio">
+    <link rel="apple-touch-icon" href="/img/icon/logo-152.png">
+    <meta name="theme-color" content="#414141" />
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-        <a class="navbar-brand" href="#"></a>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-transparent">
+        <a class="navbar-brand" href="#welcome"><img src='img/icon/icon.png' class="img-logo" alt="logo" /></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#div-nav"
             aria-controls="div-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,16 +30,16 @@
         <div class="collapse navbar-collapse" id="div-nav">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#welcome">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
+                    <a class="nav-link" href="#projects">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -50,57 +56,65 @@
             <div class="row about-section-row">
                 <div class="col-lg-4 col-md-6 about-explanation mb-5">
                     <h3 class="text-center headline font-weight-bold">About Me</h3>
-                    <p id="about-paragraph">Hi, I'm Kevin. I'm a Web Developer based on Bandung and I really like Front-end development
+                    <p id="about-paragraph">Hi, I'm Kevin. I'm a Web Developer based on Bandung and I really like
+                        Front-end development
                         because I can see
                         first
                         hand what I'm working on. I have knowledge in HTML, CSS, Javascript, JQuery, Bootstrap and so
                         on.
                     </p>
                     <div class="text-center">
-                        <button type="button" class="btn-cv">Download CV &nbsp;&nbsp;&nbsp;<i
-                                class="fas fa-download"></i></button>
+                        <a href="file/CV_MuhammadKevin.pdf"><button type="button" class="btn-cv">Download CV
+                                &nbsp;&nbsp;&nbsp;<i class="fas fa-download"></i></button></a>
                     </div>
                 </div>
                 <div class="col-lg-4 d-sm-none d-md-none d-lg-block div-profile">
                     <div class="text-center">
-                        <img src="img/profile.png" class="img-profile" />
+                        <img src="img/profile.png" class="img-profile" alt="photo profile"/>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-3">
                     <h3 class="text-center about-headline font-weight-bold">Skills</h3>
                     <div class="row text-center">
                         <div class="col-4 col-lg-3">
-                            <img src="img/html5.svg" class="icon-skills" data-toggle="tooltip" data-placement="top" title="Intermediate"/>
+                            <img src="img/html5.svg" class="icon-skills" data-toggle="tooltip" data-placement="top"
+                                title="Intermediate" alt="html"/>
                             <br>
                             <small>HTML5</small>
                         </div>
                         <div class="col-4 col-lg-3">
-                            <img src="img/css-3.svg" class="icon-skills" data-toggle="tooltip" data-placement="top" title="Intermediate"/>
+                            <img src="img/css-3.svg" class="icon-skills" data-toggle="tooltip" data-placement="top"
+                                title="Intermediate" alt="css3"/>
                             <br>
                             <small>CSS3</small>
                         </div>
                         <div class="col-4 col-lg-3">
-                            <img src="img/javascript.svg" class="icon-skills" data-toggle="tooltip" data-placement="top" title="Basic"/>
+                            <img src="img/javascript.svg" class="icon-skills" data-toggle="tooltip" data-placement="top"
+                                title="Basic" alt="javascript"/>
                             <br>
                             <small>Javascript</small>
                         </div>
                         <div class="col-4 col-lg-3">
-                            <img src="img/jquery.png" class="icon-skills" data-toggle="tooltip" data-placement="top" title="Basic"/>
+                            <img src="img/jquery.png" class="icon-skills" data-toggle="tooltip" data-placement="top"
+                                title="Basic" alt="jquery"/>
                             <br>
                             <small>JQuery</small>
                         </div>
                         <div class="col-4 col-lg-3">
-                            <img src="img/bootstrap.png" class="icon-skills" data-toggle="tooltip" data-placement="top" title="Intermediate"/>
+                            <img src="img/bootstrap.png" class="icon-skills" data-toggle="tooltip" data-placement="top"
+                                title="Intermediate" alt="bootstrap"/>
                             <br>
                             <small>Bootstrap</small>
                         </div>
                         <div class="col-4 col-lg-3">
-                            <img src="img/materialize.png" class="icon-skills" data-toggle="tooltip" data-placement="top" title="Basic"/>
+                            <img src="img/materialize.png" class="icon-skills" data-toggle="tooltip"
+                                data-placement="top" title="Basic" alt="materialize css"/>
                             <br>
                             <small>Materialize</small>
                         </div>
                         <div class="col-4 col-lg-3">
-                            <img src="img/pwa.png" class="icon-skills" data-toggle="tooltip" data-placement="top" title="Basic"/>
+                            <img src="img/pwa.png" class="icon-skills" data-toggle="tooltip" data-placement="top"
+                                title="Basic" alt="PWA"/>
                             <br>
                             <small>PWA</small>
                         </div>
@@ -115,32 +129,33 @@
         <div class="container">
             <h3 class="text-center font-weight-bold headline">Portfolio</h3>
             <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <img src="img/ird3.png" class="img-portfolio img-thumbnail"/>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <img src="img/ird3.png" class="img-portfolio img-thumbnail" alt="IRD"/>
                     <div class="img-data">
                         <h4 class="text-center">IRD Website</h4>
-                        <a href='#' class="icon-link"><img src="img/link.svg"></a>
+                        <a href='http://ird.widyatama.ac.id' target="_blank" rel="noopener" class="icon-link"><img
+                                src="img/link.svg" alt="link"></a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <img src="img/flociti.png" class="img-portfolio img-thumbnail"/>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <img src="img/flociti.png" class="img-portfolio img-thumbnail" alt="Travel Shuttle"/>
                     <div class="img-data">
                         <h4 class="text-center">Travel Shuttle Website</h4>
-                        <a href='#' class="icon-link"><img src="img/link.svg"></a>
+                        <a href='#' class="icon-link"><img src="img/link.svg" alt="link"></a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <img src="img/klinik.png" class="img-portfolio img-thumbnail"/>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <img src="img/klinik.png" class="img-portfolio img-thumbnail" alt="Clinic Website"/>
                     <div class="img-data">
                         <h4 class="text-center">Clinic Website</h4>
-                        <a href='#' class="icon-link"><img src="img/link.svg"></a>
+                        <a href='#' class="icon-link"><img src="img/link.svg" alt="link"></a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <img src="img/bjb1.png" class="img-portfolio img-thumbnail"/>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <img src="img/bjb1.png" class="img-portfolio img-thumbnail" alt="Financial Projections"/>
                     <div class="img-data">
                         <h4 class="text-center">Financial Projections Website</h4>
-                        <a href='#' class="icon-link"><img src="img/link.svg"></a>
+                        <a href='#' class="icon-link"><img src="img/link.svg" alt="link"></a>
                     </div>
                 </div>
             </div>
@@ -153,16 +168,19 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-3">
-                    <a href='#' class="social-icons"><i class="fab fa-github"></i></a>
+                    <a href='https://github.com/muhammadkevinpf/' target="_blank" rel="noopener" class="social-icons"><i
+                            class="fab fa-github"></i></a>
                 </div>
                 <div class="col-3">
-                    <a href='https://www.linkedin.com/in/muhammad-kevin-52497617a/' class="social-icons"><i class="fab fa-linkedin"></i></a>
+                    <a href='https://www.linkedin.com/in/muhammad-kevin-52497617a/' target="_blank" rel="noopener"
+                        class="social-icons"><i class="fab fa-linkedin"></i></a>
                 </div>
                 <div class="col-3">
                     <a href='mailto:muhammadkevinpf@gmail.com' class="social-icons"><i class="fas fa-envelope"></i></a>
                 </div>
                 <div class="col-3">
-                    <a href='https://wa.me/6282262341721' class="social-icons"><i class="fab fa-whatsapp-square"></i></a>
+                    <a href='https://wa.me/6282262341721' class="social-icons"><i
+                            class="fab fa-whatsapp-square"></i></a>
                 </div>
             </div>
         </div>
@@ -170,16 +188,16 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
 
     <script>
-        $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
-                items: 1,
-                loop: true,
-                dots: false
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
             });
+        }
 
+
+        $(document).ready(function () {
             $('[data-toggle="tooltip"]').tooltip()
         });
     </script>
