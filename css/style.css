@@ -129,6 +129,7 @@ p{
     display: flex;
     opacity: 0;
     flex-direction: column;
+    justify-content: center;
     height: 100%;
     width: 100%;
     padding: 60px;
@@ -214,14 +215,14 @@ p{
 
 @media (min-width: 320px) and (max-width: 480px){
     #welcome-header{
-        font-size: 2.5rem;
+        font-size: 3rem;
         top: 40%;
         left: 10%;
     }
 
     #subheader{
         font-size: 1.1rem;
-        left:12%;
+        left:17%;
         top:50%;
     }
 
