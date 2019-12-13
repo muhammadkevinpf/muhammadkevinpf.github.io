@@ -12,7 +12,7 @@ workbox.routing.registerRoute(
         cacheName: 'cache-css',
         plugins:[
             new workbox.expiration.Plugin({
-                maxAgeSeconds: 60 * 60 * 24 * 7,
+                maxAgeSeconds: 60 * 60 * 24 * 3,
                 maxEntries: 20,
                 purgeOnQuotaError: true
             })
@@ -26,7 +26,7 @@ workbox.routing.registerRoute(
         cacheName: 'cache-images',
         plugins: [
             new workbox.expiration.Plugin({
-                maxAgeSeconds: 60 * 60 * 24 * 7,
+                maxAgeSeconds: 60 * 60 * 24 * 3,
                 maxEntries: 50,
                 purgeOnQuotaError: true
             })

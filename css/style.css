@@ -26,29 +26,32 @@ html {
 
 #welcome{
     height: 100vh;
-    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 #welcome-header{
     font-family: 'Libre Baskerville', serif;
-    position: absolute;
+    /* position: absolute;
     left:38%;
-    top:40%;
+    top:40%; */
     font-size: 4rem;
 }
 
 #subheader{
     font-family: 'Libre Baskerville', serif;
-    position: absolute;
+    /* position: absolute;
     left:41%;
-    top:52%;
+    top:52%; */
     font-size: 1.5rem;
 }
 
 #scrolldown{
     position: absolute;
     bottom:0;
-    left:50%;
     font-size: 2rem;
     transform: rotate(90deg);
     cursor: pointer;
@@ -166,19 +169,6 @@ p{
     padding:4%;
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
-    #welcome-header{
-        top: 40%;
-        left: 25%;
-    }
-
-    #subheader{
-        left:29%;
-        top:52%;
-    }
-    
-}
-
 
 @media only screen and (max-width: 640px){
     .icon-skills{
@@ -195,13 +185,6 @@ p{
 
     #welcome-header{
         font-size: 3.5rem;
-        top: 38%;
-        left: 17%;
-    }
-
-    #subheader{
-        left:19%;
-        top:58%;
     }
 
     .social-icons{
@@ -215,15 +198,11 @@ p{
 
 @media (min-width: 320px) and (max-width: 480px){
     #welcome-header{
-        font-size: 3rem;
-        top: 40%;
-        left: 10%;
+        font-size: 2.5rem;
     }
 
     #subheader{
         font-size: 1.1rem;
-        left:17%;
-        top:50%;
     }
 
     .img-portfolio{
