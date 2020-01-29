@@ -7,21 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Kevin's Portfolio">
     <title>Kevin's Portfolio</title>
-    <!-- <link rel="icon" href="img/icon/icon.png" type="image/png"> -->
+    <link rel="icon" href="img/icon/icon.png" type="image/png">
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="manifest" href="/manifest.json">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Kevin's Portfolio">
-    <link rel="apple-touch-icon" href="/img/icon/logo-152.png">
+    <link rel="apple-touch-icon" href="img/icon/icon.png">
     <meta name="theme-color" content="#FFFFFF" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-transparent">
-        <a class="navbar-brand" href="#welcome"><img src='img/icon/icon.png' class="img-logo" alt="logo" /></a>
+        <a class="navbar-brand" href="#welcome"><img src='img/icon/logo-128.png' class="img-logo" alt="logo" /></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#div-nav"
             aria-controls="div-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -48,7 +50,12 @@
     <section id="welcome">
         <header id="welcome-header">Hello, There.</header>
         <span id="subheader">I'm Kevin, a Web Developer</span>
-        <a href='#about' id="scrolldown"><span><i class="fas fa-chevron-right"></i></span></a>
+        <!-- <a href='#about' id="scrolldown"><span><i class="fas fa-chevron-right"></i></span></a> -->
+        <a href='#about'>
+            <lottie-player id="scrolldown" src="img/animation/1405-scroll-down.json" background="transparent" speed="1"
+                style="width: 30px; height: 250px;" loop autoplay>
+            </lottie-player>
+        </a>
     </section>
 
     <section id="about">
@@ -70,63 +77,63 @@
                 </div>
                 <div class="col-lg-4 d-sm-none d-md-none d-lg-block div-profile">
                     <div class="text-center">
-                        <img src="img/profile.png" class="img-profile" alt="photo profile"/>
+                        <img src="img/profile.png" class="img-profile" alt="photo profile" />
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-3">
+                <div class="col-lg-4 col-md-6 mb-3 about-skills">
                     <h3 class="text-center about-headline font-weight-bold">Skills</h3>
                     <div class="row text-center">
                         <div class="col-4 col-lg-3">
                             <img src="img/html5.svg" class="icon-skills" data-toggle="tooltip" data-placement="top"
-                                title="Intermediate" alt="html"/>
+                                title="Intermediate" alt="html" />
                             <br>
                             <small>HTML5</small>
                         </div>
                         <div class="col-4 col-lg-3">
                             <img src="img/css-3.svg" class="icon-skills" data-toggle="tooltip" data-placement="top"
-                                title="Intermediate" alt="css3"/>
+                                title="Intermediate" alt="css3" />
                             <br>
                             <small>CSS3</small>
                         </div>
                         <div class="col-4 col-lg-3">
                             <img src="img/javascript.svg" class="icon-skills" data-toggle="tooltip" data-placement="top"
-                                title="Basic" alt="javascript"/>
+                                title="Basic" alt="javascript" />
                             <br>
                             <small>Javascript</small>
                         </div>
                         <div class="col-4 col-lg-3">
                             <img src="img/jquery.png" class="icon-skills" data-toggle="tooltip" data-placement="top"
-                                title="Basic" alt="jquery"/>
+                                title="Basic" alt="jquery" />
                             <br>
                             <small>JQuery</small>
                         </div>
                         <div class="col-4 col-lg-3">
                             <img src="img/bootstrap.png" class="icon-skills" data-toggle="tooltip" data-placement="top"
-                                title="Intermediate" alt="bootstrap"/>
+                                title="Intermediate" alt="bootstrap" />
                             <br>
                             <small>Bootstrap</small>
                         </div>
                         <div class="col-4 col-lg-3">
                             <img src="img/php.svg" class="icon-skills" data-toggle="tooltip" data-placement="top"
-                                title="Intermediate" alt="php"/>
+                                title="Intermediate" alt="php" />
                             <br>
                             <small>PHP</small>
                         </div>
                         <div class="col-4 col-lg-3">
-                            <img src="img/codeigniter.png" class="icon-skills" data-toggle="tooltip" data-placement="top"
-                                title="Basic" alt="codeigniter"/>
+                            <img src="img/codeigniter.png" class="icon-skills" data-toggle="tooltip"
+                                data-placement="top" title="Basic" alt="codeigniter" />
                             <br>
                             <small>Codeigniter</small>
                         </div>
                         <div class="col-4 col-lg-3">
                             <img src="img/materialize.png" class="icon-skills" data-toggle="tooltip"
-                                data-placement="top" title="Basic" alt="materialize css"/>
+                                data-placement="top" title="Basic" alt="materialize css" />
                             <br>
                             <small>Materialize</small>
                         </div>
                         <div class="col-4 col-lg-3">
                             <img src="img/pwa.png" class="icon-skills" data-toggle="tooltip" data-placement="top"
-                                title="Basic" alt="PWA"/>
+                                title="Basic" alt="PWA" />
                             <br>
                             <small>PWA</small>
                         </div>
@@ -142,23 +149,23 @@
             <h3 class="text-center font-weight-bold headline">Portfolio</h3>
             <div class="row">
                 <div class="col-lg-6 col-md-6 mb-4">
-                    <img src="img/drum.png" class="img-portfolio img-thumbnail" alt="IRD"/>
+                    <img src="img/drum.png" class="img-portfolio img-thumbnail" alt="IRD" />
                     <div class="img-data">
                         <h4 class="text-center">Drum Machine</h4>
-                        <a href='https://codepen.io/muhammadkevinpf/full/JjoxJGL' target="_blank" rel="noopener" class="icon-link"><img
-                                src="img/link.svg" alt="link"></a>
+                        <a href='https://codepen.io/muhammadkevinpf/full/JjoxJGL' target="_blank" rel="noopener"
+                            class="icon-link"><img src="img/link.svg" alt="link"></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 mb-4">
-                    <img src="img/quote.png" class="img-portfolio img-thumbnail" alt="IRD"/>
+                    <img src="img/quote.png" class="img-portfolio img-thumbnail" alt="IRD" />
                     <div class="img-data">
                         <h4 class="text-center">Random Quote Maker</h4>
-                        <a href='https://codepen.io/muhammadkevinpf/full/RwNeaQX' target="_blank" rel="noopener" class="icon-link"><img
-                                src="img/link.svg" alt="link"></a>
+                        <a href='https://codepen.io/muhammadkevinpf/full/RwNeaQX' target="_blank" rel="noopener"
+                            class="icon-link"><img src="img/link.svg" alt="link"></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 mb-4">
-                    <img src="img/ird3.png" class="img-portfolio img-thumbnail" alt="IRD"/>
+                    <img src="img/ird3.png" class="img-portfolio img-thumbnail" alt="IRD" />
                     <div class="img-data">
                         <h4 class="text-center">IRD Website</h4>
                         <a href='http://ird.widyatama.ac.id' target="_blank" rel="noopener" class="icon-link"><img
@@ -166,23 +173,23 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 mb-4">
-                    <img src="img/flociti.png" class="img-portfolio img-thumbnail" alt="Travel Shuttle"/>
+                    <img src="img/flociti.png" class="img-portfolio img-thumbnail" alt="Travel Shuttle" />
                     <div class="img-data">
                         <h4 class="text-center">Travel Shuttle Website</h4>
-                        <a href='https://github.com/muhammadkevinpf/website-flociti' target="_blank" rel="noopener" class="icon-link"><img
-                            src="img/link.svg" alt="link"></a>
+                        <a href='https://github.com/muhammadkevinpf/website-flociti' target="_blank" rel="noopener"
+                            class="icon-link"><img src="img/link.svg" alt="link"></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 mb-4">
-                    <img src="img/klinik.png" class="img-portfolio img-thumbnail" alt="Clinic Website"/>
+                    <img src="img/klinik.png" class="img-portfolio img-thumbnail" alt="Clinic Website" />
                     <div class="img-data">
                         <h4 class="text-center">Clinic Website</h4>
-                        <a href='https://github.com/muhammadkevinpf/Website-Klinik' target="_blank" rel="noopener" class="icon-link"><img
-                            src="img/link.svg" alt="link"></a>
+                        <a href='https://github.com/muhammadkevinpf/Website-Klinik' target="_blank" rel="noopener"
+                            class="icon-link"><img src="img/link.svg" alt="link"></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 mb-4">
-                    <img src="img/bjb1.png" class="img-portfolio img-thumbnail" alt="Financial Projections"/>
+                    <img src="img/bjb1.png" class="img-portfolio img-thumbnail" alt="Financial Projections" />
                     <div class="img-data">
                         <h4 class="text-center">Financial Projections Website</h4>
                         <!-- <a href='#' class="icon-link"><img src="img/link.svg" alt="link"></a> -->
@@ -218,14 +225,12 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('/service-worker.js')
             });
         }
-
 
         $(document).ready(function () {
             $('[data-toggle="tooltip"]').tooltip()

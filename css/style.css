@@ -52,8 +52,8 @@ html {
 #scrolldown{
     position: absolute;
     bottom:0;
-    font-size: 2rem;
-    transform: rotate(90deg);
+    /* font-size: 2rem; */
+    /* transform: rotate(90deg); */
     cursor: pointer;
     color:#000;
 }
